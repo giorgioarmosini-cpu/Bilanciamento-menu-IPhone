@@ -1,0 +1,34 @@
+BILANCIO MENÙ 1.1.1 — versione iPhone (app web installabile) — Giorgio Armosini
+
+È la stessa app della versione di prova Android 1.1.1, con le stesse funzioni
+e lo stesso sistema di prova di 14 giorni con codici di attivazione.
+
+PUBBLICAZIONE (una volta sola, gratis, con GitHub Pages)
+1. Su GitHub crea un repository nuovo e PUBBLICO, per esempio "bilancio-menu".
+2. Add file > Upload files: carica i file di questa cartella (non lo zip),
+   cioè index.html, sw.js, manifest.webmanifest e le 4 icone .png.
+   Poi Commit changes.
+3. Settings > Pages > Build and deployment: Source "Deploy from a branch",
+   Branch "main", cartella "/ (root)", Save.
+4. Dopo 1-2 minuti l'indirizzo è:
+   https://giorgioarmosini-cpu.github.io/bilancio-menu/
+
+INSTALLAZIONE SULL'IPHONE
+1. Apri l'indirizzo con SAFARI (non Chrome).
+2. Tocca Condividi (quadrato con la freccia) > "Aggiungi alla schermata Home".
+3. Apri l'app dall'icona: parte a schermo intero e funziona anche offline.
+   Usala sempre dall'icona: i dati sono legati a quella.
+
+DIFFERENZE RISPETTO ALL'APK ANDROID
+- Promemoria e widget: non disponibili su iPhone (Apple non li concede alle
+  app web senza un server). Tutto il resto funziona.
+- PDF, backup e lista della spesa si condividono dal menu Condividi di iOS:
+  da lì WhatsApp, Mail o "Salva su File".
+- Codice a barre: serve consentire la fotocamera a Safari la prima volta.
+- Codice dispositivo per l'attivazione: si legge nell'app, come su Android.
+  Se l'app viene eliminata e reinstallata, il codice cambia.
+
+AGGIORNAMENTI
+Sostituisci index.html su GitHub e in sw.js cambia il numero in
+CACHE = "bilancio-menu-1.1.1" (per esempio 1.1.2). All'apertura successiva
+l'iPhone scarica la nuova versione; i dati restano.
